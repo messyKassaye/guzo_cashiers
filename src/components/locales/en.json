@@ -1,0 +1,15 @@
+{
+    "en":{
+        "languages":"Languages",
+        "login_info":"Login to your dashboard",
+        "phone":"Phone number",
+        "password":"Password",
+        "login":"Login",
+        "error":{
+            "phone":"Please add your phone number",
+            "password":"Please enter your password",
+            "something":"Something is not good. Please check your internet connection ):",
+            "incorrect":"Incorrect phone or password is used"
+        }
+    }
+}
