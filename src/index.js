@@ -11,6 +11,7 @@ import Interceptor from './Interceptor';
 import Routes from './routes/route';
 import {Provider} from 'react-redux'
 import store from './store'
+import MainDialog from './auth/dialogs/MainDialog'
 ReactDOM.render(
   <React.StrictMode>
     <CssBaseline>
@@ -18,6 +19,7 @@ ReactDOM.render(
         <I18nextProvider i18n={i18n}>
         <MuiThemeProvider theme={theme}>
           <Interceptor/>
+          <MainDialog/>
           <Routes/>
         </MuiThemeProvider>
         </I18nextProvider>

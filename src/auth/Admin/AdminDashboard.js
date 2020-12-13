@@ -5,4 +5,8 @@ import AdminNestedRoute from "./routes/AdminNestedRoute"
 const AdminDashboard = ()=>{
 
     return(
-        <CommonDashboard drawerMenu={adm
+        <CommonDashboard drawerMenu={adminDrawerMenu} routes={<AdminNestedRoute/>}/>
+    )
+}
+
+export default AdminDashboard

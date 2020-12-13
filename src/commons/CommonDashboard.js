@@ -1,8 +1,10 @@
-import { AppBar, CssBaseline, Hidden, IconButton, Menu, SwipeableDrawer, Divider,Toolbar, Typography, Container, Avatar } from '@material-ui/core'
+import { AppBar, CssBaseline, Hidden, IconButton, SwipeableDrawer, Divider,Toolbar,
+     Typography, Container, Avatar } from '@material-ui/core'
 import {Route } from 'react-router-dom'
 import {Switch} from 'react-router-dom'
 import authStyle from '../auth/style/auth_style'
 import DrawerProfile from './DrawerProfile'
+import {Menu} from '@material-ui/icons'
 import theme from '../themes/AppTheme'
 import { useState } from 'react'
 import AdminDrawerMenu from './AdminDrawerMenu'
@@ -91,4 +93,12 @@ const CommonDashboard = (props)=>{
         </nav>
         <main className={classes.content}>
             <div className={classes.toolbar}/>
-            <Container maxWidth=
+            <Container maxWidth={'lg'}>
+                {routesComponent()}
+            </Container>
+        </main>
+    </div>
+    )
+}
+
+export default CommonDashboard

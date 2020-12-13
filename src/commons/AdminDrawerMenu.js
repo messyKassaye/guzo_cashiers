@@ -118,4 +118,4 @@ class AdminDrawerMenu extends React.Component{
 
 }
 
-export default withStyles(drawerMenuStyle)(AdminDr
+export default withStyles(drawerMenuStyle)(AdminDrawerMenu)

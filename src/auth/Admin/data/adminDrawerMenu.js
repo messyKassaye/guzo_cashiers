@@ -8,12 +8,17 @@ import PersonIcon from '@material-ui/icons/Person';
 import ExtensionIcon from '@material-ui/icons/Extension';
 import BusinessIcon from '@material-ui/icons/Business'
 import React from "react";
-import { DirectionsBus, GroupAdd, GroupWork, Payment, Person, Receipt, Streetview } from '@material-ui/icons'
+import { BusinessOutlined, DirectionsBus, GroupAdd, GroupWork, Payment, Person, Receipt, Streetview } from '@material-ui/icons'
 const adminDrawerMenu = [
     {
         name:'Dashboard',
         route:'/auth',
         icon:<DashboardIcon/>
+    },
+    {
+      name:'Banks',
+      route:'/auth/admin/banks',
+      icon:<BusinessOutlined/>
     },
     {
         name:'Buses',
@@ -33,4 +38,15 @@ const adminDrawerMenu = [
       },
       {
         name:'Routes',
-   
+        route:'/auth/admin/routes',
+        icon:<Streetview/>
+      },
+      
+    {
+        name:'Settings',
+        route:'/auth/admin/settings',
+        icon: <SettingIcon/>,
+    },
+]
+
+export default adminDrawerMenu

@@ -58,7 +58,7 @@ const drawerWidth = 240;
     menuButton: {
         marginRight: theme.spacing(2),
         display:'none',
-        [theme.breakpoints.up('xs')]: {
+        [theme.breakpoints.down('xs')]: {
             display: 'flex',
         },
     },
